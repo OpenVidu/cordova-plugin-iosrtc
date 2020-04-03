@@ -135,8 +135,6 @@ class PluginGetUserMedia {
 
 			NSLog("PluginGetUserMedia#call() | chosen audio constraints: %@", audioConstraints)
 
-			let audioDeviceId = audioConstraints.object(forKey: "deviceId") as? String
-
 			var audioDeviceId = audioConstraints.object(forKey: "deviceId") as? String
 			if(audioDeviceId == nil && audioConstraints.object(forKey: "deviceId") != nil){
 				let audioId = audioConstraints.object(forKey: "deviceId") as! NSDictionary
